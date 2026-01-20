@@ -1,0 +1,4 @@
+nombre,precio,cantidad
+Portatil,799.99,10
+Telefono,299.99,5
+Tablet,199.99,0

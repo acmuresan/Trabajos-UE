@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #222222; 
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center; 
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px; 
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #AAAAAA;
+}
+
+footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #888888;
+  border-top: 1px solid #222222;
+  margin-top: 60px;
+}
+
+.portada-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  padding: 0 20px;
+  text-align: center;
+}
+
+@keyframes animacionLogo {
+  from {
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+} 
+
+.portada-principal .logo img {
+  height: 400px; 
+  vertical-align: middle;
+  animation: animacionLogo 1.5s ease-in; 
+}
+
+.portada-principal h1 {
+  font-size: 2.5em; 
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.portada-principal p {
+  font-size: 1.2em;
+  color: #AAAAAA;
+  margin-bottom: 30px;
+}
+
+.boton-accion {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-accion:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  outline: 1px solid #FFFFFF;
+}
+
+.sobre-nosotros {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.sobre-nosotros h2 {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+
+.sobre-nosotros p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #AAAAAA;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros p:last-child {
+  margin-bottom: 0;
+}
+
+/* ESTILOS DE PÁGINA ESPECÍFICOS (PRODUCTO.HTML) */
+.producto-detalle {
+  display: flex;
+  align-items: center; 
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.producto-imagen {
+  flex: 1;
+}
+
+.producto-imagen img {
+  width: 100%;
+}
+
+.producto-info {
+  flex: 1;
+  padding-left: 40px; 
+}
+
+.producto-info h1 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.producto-info .precio {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 15px 0;
+}
+
+.producto-info .descripcion {
+  font-size: 1em;
+  color: #AAAAAA;
+  margin-bottom: 30px;
+}
+
+/* ESTILOS DE PÁGINA ESPECÍFICOS (CONTACTO.HTML) */
+.seccion-contacto {
+  max-width: 600px; 
+  margin: 0px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contacto-logo img {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.seccion-contacto h2 {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.seccion-contacto p {
+  font-size: 1.1em;
+  color: #AAAAAA;
+  margin-bottom: 30px;
+}
+
+.formulario-contacto {
+  text-align: left;
+}
+
+.grupo-formulario {
+  margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.formulario-contacto .boton-accion {
+  width: 100%; 
+  margin-top: 10px;
+}

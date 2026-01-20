@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="contenedor-juego">
+      <h1>♠️♣️ Blackjack ♦️♥️</h1>
+
+      <div class="tablero">
+        <div class="zona banca">
+          <div class="marcador">
+            <h2>Banca</h2>
+            <span id="puntos-banca" class="globo-puntos">0</span>
+          </div>
+
+          <div id="cartas-banca" class="mesa-cartas"></div>
+        </div>
+
+        <div class="zona-vs">VS</div>
+
+        <div class="zona jugador">
+          <div class="marcador">
+            <h2 id="nombre-jugador">Jugador</h2>
+            <span id="puntos-jugador" class="globo-puntos">0</span>
+          </div>
+
+          <div id="cartas-jugador" class="mesa-cartas"></div>
+        </div>
+      </div>
+
+      <div id="controles" class="panel-botones" style="display: none">
+        <button id="btn-pedir" class="boton accion">Pedir Carta</button>
+        <button id="btn-plantarse" class="boton plantarse">Plantarse</button>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

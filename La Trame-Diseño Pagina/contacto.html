@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - LA TRAME</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="producto.html">Producto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="seccion-contacto">
+        <div class="contacto-logo">
+          <img src="Imagenes\logo-latrame.jpeg" alt="Logo La Trame" />
+        </div>
+
+        <h2>Contacta con Nosotros</h2>
+        <p>
+          ¿Tienes alguna pregunta, sugerencia o simplemente quieres saludar?
+          ¡Estamos aquí para escucharte!
+        </p>
+
+        <form action="#" method="POST" class="formulario-contacto">
+          <div class="grupo-formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required />
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required />
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="codigo_postal">Código Postal:</label>
+            <input
+              type="text"
+              id="codigo_postal"
+              name="codigo_postal"
+              required
+            />
+          </div>
+          <div class="grupo-formulario">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="boton-accion">Enviar Mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 LA TRAME. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
